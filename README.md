@@ -15,6 +15,7 @@
 
 8. The last, we can run our model on Ultra96-v2 board. There is an example that using yolo model to detate vehicles (./edge/dpu_yolo_v4_tiny.ipynb). There are the results, the fps is 25 with 320*320 images.
 
+
    ![1](https://github.com/yss9701/Ultra96-Yolov4-tiny/raw/main/img/1.png)
 
    ![2](https://github.com/yss9701/Ultra96-Yolov4-tiny/raw/main/img/2.png)
