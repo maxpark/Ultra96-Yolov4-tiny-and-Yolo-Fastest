@@ -14,15 +14,9 @@
 7. We should use vivado and Vitis to build the hardware platform. (./edge/readme.md)
 
 8. The last, we can run our model on Ultra96-v2 board. There is an example that using yolo model to detate vehicles (./edge/dpu_yolo_v4_tiny.ipynb). There are the results, the fps is 25 with 320*320 images.
-"""
-   ![1](https://github.com/yss9701/Ultra96-Yolov4-tiny/raw/main/img/1.png)
-   ![2](https://github.com/yss9701/Ultra96-Yolov4-tiny/raw/main/img/2.png)
-"""
+
 9. In order to achieve faster detection speed, I try to use Yolo-Fastest ([Yolo-Fastest](https://github.com/dog-qiuqiu/Yolo-Fastest)) and implement it with tensorflow, then deploy it to Ultra96-v2 board. There are the results, it can achieve 30fps+.
-"""
-![3](https://github.com/yss9701/Ultra96-Yolov4-tiny/raw/main/img/3.png)
-![4](https://github.com/yss9701/Ultra96-Yolov4-tiny/raw/main/img/4.png)
-"""
+
 10. Now we support model pruning. We use [keras-surgeon](https://github.com/BenWhetton/keras-surgeon) 0.2.0 and [nni](https://github.com/microsoft/nni) 1.5 to prune the model, you can see in ./Model_pruning. I modified the source code of nni (compressor.py) and fixed some bugs, then we can choose the layer that we want to prune, and I gave a demo that use FPGM to prune the model.
 
    
